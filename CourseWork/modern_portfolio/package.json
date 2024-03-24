@@ -1,0 +1,19 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-xo": "^0.44.0",
+    "eslint-plugin-react": "^7.34.1"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
