@@ -3,9 +3,17 @@
         margin-top: 10vh;
     }
 
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @include mediaMd {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     main {
         align-items: center;
         text-align: center;
@@ -50,6 +58,16 @@
     }
 }
 
-@include mediaLg {}
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
-@include mediaXL {}
+}
+
+@include mediaXL {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
