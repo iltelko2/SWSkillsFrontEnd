@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://iltelko2.github.io/CourseWork/modern_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,7 @@
     "eslint-plugin-react": "^7.34.1"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "node-sass": "^9.0.0"
   }
 }

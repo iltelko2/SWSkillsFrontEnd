@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 60px;
+}
+
+
 body {
     @include background;
     background-color: $primary-color;
@@ -99,7 +108,7 @@ main {
 }
 
 .job {
-    background: lighten($color: $primary-color, 5);
+    background: lighten($primary-color, 5);
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
 }
@@ -171,12 +180,6 @@ main {
     color: #333;
 }
 
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-}
+
 
 @import 'mobile';
