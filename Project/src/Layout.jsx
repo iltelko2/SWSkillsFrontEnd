@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom"
+import { Outlet, Link } from "react-router-dom"
 import PathConstants from "./routes/pathConstants.js"
 import toggleMenu from "./assets/js/toggleMenu.js"
 
@@ -18,39 +18,39 @@ export default function Layout() {
                     </div>
                     <ul className="menu-nav hide">
                         <li className="nav-item current hide">
-                            <a href={PathConstants.Index} className="nav-link">
+                            <Link to={PathConstants.Index} className="nav-link" onClick={toggleMenu}>
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.Hobbies} className="nav-link">
+                            <Link to={PathConstants.Hobbies} className="nav-link" onClick={toggleMenu}>
                                 My Hobbies
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.Character} className="nav-link">
+                            <Link to={PathConstants.Character} className="nav-link" onClick={toggleMenu}>
                                 My Work Persona
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.Cv} className="nav-link">
+                            <Link to={PathConstants.Cv} className="nav-link" onClick={toggleMenu}>
                                 My Downloadable CV
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.Links} className="nav-link">
+                            <Link to={PathConstants.Links} className="nav-link" onClick={toggleMenu}>
                                 My Social Media Links
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.License} className="nav-link">
+                            <Link to={PathConstants.License} className="nav-link" onClick={toggleMenu}>
                                 Licenses Of This Site
-                            </a>
+                            </Link>
                         </li>
                         <li className="nav-item hide">
-                            <a href={PathConstants.Contact} className="nav-link">
+                            <Link to={PathConstants.Contact} className="nav-link" onClick={toggleMenu}>
                                 How To Contact Me
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

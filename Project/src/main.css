@@ -133,7 +133,7 @@ body {
       z-index: -1; }
 
 main {
-  min-height: calc(100vh - $footerHeight);
+  min-height: calc(100% - 70px);
   background-color: white;
   color: blue;
   height: 100%;
