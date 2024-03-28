@@ -1,0 +1,83 @@
+@import 'config';
+@import 'menu';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+
+main {
+    min-height: calc(100vh - $footerHeight);
+
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    margin-top: 4rem;
+    margin-left: 1rem;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    .contactType {
+        font-size: large;
+        font-weight: bolder;
+    }
+}
+
+.hobbies {
+    display: grid;
+    grid-gap: 0.7rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    .hobbyTitle {
+        font-size: large;
+        font-weight: bolder;
+    }
+
+    img {
+        width: 100%;
+        border: 3px #fff solid;
+
+        &:hover {
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+}
+
+footer {
+    height: $footerHeight;
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-color, 50);
+    color: darken($secondary-color, 30);
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+}
+
+@import 'mobile';

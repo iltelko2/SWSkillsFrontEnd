@@ -1,0 +1,29 @@
+@include mediaSm {
+    .contacts {
+        display: grid;
+        grid-gap: 0.7rem;
+        grid-template-columns: 1fr;
+    }
+
+    .hobbies {
+        grid-template-columns: 1fr;
+    }
+}
+
+@include mediaMd {
+    .hobbies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include mediaLg {
+    .hobbies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include mediaXL {
+    .hobbies {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

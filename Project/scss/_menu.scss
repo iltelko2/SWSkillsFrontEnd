@@ -10,7 +10,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: set-text-color($primary-color);
+        background: $secondary-color;
         @include easeOut;
     }
 
@@ -44,7 +44,7 @@
         visibility: visible;
     }
 
-    &-branding,
+    &-portrait,
     &-nav {
         display: flex;
         flex-flow: column wrap;
@@ -59,20 +59,20 @@
     &-nav {
         margin: 0;
         padding: 0;
-        background: darken($color: $primary-color, $amount: 5);
+        background: darken($color: $primary-color, $amount: 35);
         list-style: none;
         transform: translate3d(0, -100%, 0);
-        @include easeOut;
+        @include easeOutSlow;
 
         &.show {
             transform: translate3d(0, 0, 0);
         }
     }
 
-    &-branding {
+    &-portrait {
         background: $primary-color;
         transform: translate3d(0, 100%, 0);
-        @include easeOut;
+        @include easeOutSlow;
 
         &.show {
             transform: translate3d(0, 0, 0);
@@ -81,18 +81,33 @@
         .portrait {
             width: 250px;
             height: 250px;
-            background: url(../img/portfolio.jpg);
-            border-radius: 50%;
-            border: solid 3px $secondary-color;
+            background: url(../img/portrait-ilkkakorhonen.jpg);
+            border-radius: 5%;
+            border: dashed 1px $secondary-color;
         }
     }
 
     .nav-item {
-        transform: translate3d(600px, 0, 0);
-        @include easeInOut;
+        @include easeOut;
 
         &.show {
             transform: translate3d(0, 0, 0);
+
+            @for $x from 1 through 7 {
+                &:nth-child(#{$x}) {
+                    transition-delay: $x * 0.1s;
+                }
+            }
+        }
+
+        &.hide {
+            transform: translate3d(600px, 0, 0);
+
+            @for $x from 7 through 1 {
+                &:nth-child(#{$x}) {
+                    transition-delay: $x * 0.1s;
+                }
+            }
         }
 
         &.current>a {
@@ -107,20 +122,15 @@
         text-transform: uppercase;
         padding: 1rem 0;
         font-weight: 300;
-        color: set-text-color($primary-color);
+        color: $secondary-color;
         text-decoration: none;
         @include easeOut;
 
         &:hover {
-            color: $secondary-color;
+            color: darken($secondary-color, 50);
+            font-weight: 900;
         }
     }
 
 
-}
-
-@for $x from 1 through 4 {
-    .nav-item:nth-child(#{$x}) {
-        transition-delay: $x * 0.1s;
-    }
 }
