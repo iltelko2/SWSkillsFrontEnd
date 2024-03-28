@@ -1,19 +1,17 @@
-const menuBtn = document.querySelector('.menu-btn');
-const menu = document.querySelector('.menu');
-const menuNav = document.querySelector('.menu-nav');
-const menuPortrait = document.querySelector('.menu-portrait');
-
-const navItems = document.querySelectorAll('.nav-item');
-
 let showMenu = false;
 
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-menuBtn.addEventListener('click', toggleMenu);
-
 function toggleMenu() {
+    const menuBtn = document.querySelector('.menu-btn');
+    const menu = document.querySelector('.menu');
+    const menuNav = document.querySelector('.menu-nav');
+    const menuPortrait = document.querySelector('.menu-portrait');
+
+    const navItems = document.querySelectorAll('.nav-item');
+
     if (!showMenu) {
         navItems.forEach(item => item.classList.remove('hide'));
 
@@ -52,3 +50,5 @@ function toggleMenu() {
         });
     }
 }
+
+export default toggleMenu

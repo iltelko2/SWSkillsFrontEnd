@@ -55,7 +55,7 @@
     .menu-portrait .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait-ilkkakorhonen.jpg);
+      background: url(../src/assets/img/portrait-ilkkakorhonen.jpg);
       border-radius: 5%;
       border: dashed 1px blue; }
   .menu .nav-item {
@@ -119,7 +119,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1; }
   body.bg-img {
-    background: url(../img/background.jpg);
+    background: url(/src/assets/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body.bg-img:after {
@@ -180,7 +180,10 @@ footer {
   line-height: 1;
   padding: 0;
   margin: 0;
-  margin-top: 5px; }
+  margin-top: 5px;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
 
 @media screen and (max-width: 500px) {
   .contacts {

@@ -5,13 +5,34 @@
   "main": "index.js",
   "homepage": "https://iltelko2.github.io/Project",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o src/ --recursive",
+    "dev": "vite",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "author": "Ilkka Korhonen",
   "license": "ISC",
   "dependencies": {
+    "-": "^0.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "gh-pages": "^6.1.1",
-    "node-sass": "^9.0.0"
+    "node-sass": "^9.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
+    "save-dev": "^0.0.1-security",
+    "vite": "^5.2.6"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
   }
 }
