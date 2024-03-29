@@ -34,10 +34,10 @@ and open 2 terminals:
 * in 1st terminal type npm run sass (test it by modifying content of any scss file & save it -- to trigger creation of css file)
 * in 2nd terminal type npm run dev
 
-Deployment
+***Deployment***
 
 (first commit all changes and push to github)
-npm run install
+npm run build
 npm run deploy
 
 
