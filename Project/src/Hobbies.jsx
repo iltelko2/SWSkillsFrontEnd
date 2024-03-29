@@ -1,12 +1,14 @@
 const Hobbies = () => (
     <main id="home">
-        <h1>My hobbies</h1>
-
+        <header>
+            <h1>My hobbies</h1>
+        </header>
         <article className="hobbies">
             <section className="hobby">
                 <div className="hobbyTitle">Taekwondo</div>
                 <div className="hobbyDescription">I currently hold 1st degree black belt in taekwondo, and I have practiced
                     it over 10 years.</div>
+                <aside><q>Tornado kick is my favorite kick</q></aside>
             </section>
             <section className="hobby">
                 <div className="hobbyTitle">Reading books</div>
