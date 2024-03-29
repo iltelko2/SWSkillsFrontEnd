@@ -136,15 +136,25 @@ main {
   min-height: calc(100% - 70px);
   background-color: white;
   color: blue;
-  height: 100%;
+  height: auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.2;
   margin-top: 4rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin-bottom: 70px; }
 
 a {
   color: red;
   text-decoration: none; }
+
+.tkd-image {
+  background: url(../src/assets/img/taekwondo.png);
+  margin: 10px;
+  border-radius: 5%;
+  border: dashed 2px white;
+  width: 100px;
+  height: 300px;
+  float: left; }
 
 .contacts {
   display: flex;
