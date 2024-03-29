@@ -7,6 +7,8 @@ const onClick = () => {
             const fileURL = window.URL.createObjectURL(blob);
             let alink = document.createElement("a");
             alink.href = fileURL;
+            alink.type = "application/pdf";
+            alink.media = "print";
             alink.download = "CV_Korhonen_Ilkka.pdf";
             alink.click();
         });
