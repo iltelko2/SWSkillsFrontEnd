@@ -1,5 +1,5 @@
 const Contact = () => (<main id="contact">
-    <div className="contacts">
+    <address className="contacts">
         <div className="contactData">
             <div className="contactType">Phone
             </div>
@@ -15,7 +15,7 @@ const Contact = () => (<main id="contact">
             </div>
             <div className="contactDescription">Antinkatu 1-3 E 39, 08200 Lohja</div>
         </div>
-    </div>
+    </address>
 </main>
 
 )
